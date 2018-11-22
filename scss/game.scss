@@ -1,0 +1,138 @@
+@import "mixins";
+@import "variables";
+
+main.mole-game {
+  @include flex-display-nowrap();
+  @include flex-align-items-center();
+  font-size: 1.4rem;
+  height: 100%;
+  background-image: url("../img/backgrounds/field.jpg");
+  background-size: cover;
+}
+
+.game-area {
+  width: 240px;
+  margin: 0 auto;
+  background-color: $grass-green;
+  border: 2px solid $dark-accent;
+
+  .fence {
+    @include flex-display-nowrap();
+    @include flex-align-items-center();
+    @include flex-justify-content-space-around();
+    height: 100px;
+    background-image: url("../img/backgrounds/header-fence.png");
+    background-position: center bottom;
+    border-bottom: 1px solid #333333;
+  }
+
+  .start {
+    @include flex-display-nowrap();
+    @include flex-align-items-center();
+    @include flex-justify-content-center();
+    width: 100%;
+    height: 75px;
+    background-image: url("../img/backgrounds/grass-border.png");
+    background-position: center;
+  }
+
+  .grid-row {
+    @include flex-display-nowrap();
+  }
+
+  .grid-item {
+    position:relative;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+
+    .key {
+      position: absolute;
+      z-index: 10;
+      bottom:0;
+      left: 50%;
+      margin-left: -10px;
+    }
+
+    .key img {
+      width: 20px;
+      height: 20px;
+    }
+
+    img.whack-mole {
+      position: relative;
+      z-index: 20;
+      display:block;
+      width: 100%;
+    }
+  }
+
+  .grid-1 {
+    background-image: url("../img/backgrounds/grass-01.png");
+  }
+
+  .grid-2 {
+    background-image: url("../img/backgrounds/grass-02.png");
+  }
+
+  .grid-3 {
+    background-image: url("../img/backgrounds/grass-03.png");
+  }
+
+  .grid-4 {
+    background-image: url("../img/backgrounds/grass-04.png");
+  }
+
+  .grid-5 {
+    background-image: url("../img/backgrounds/grass-05.png");
+  }
+
+  .grid-6 {
+    background-image: url("../img/backgrounds/grass-06.png");
+  }
+
+  .grid-7 {
+    background-image: url("../img/backgrounds/grass-07.png");
+  }
+
+  .grid-8 {
+    background-image: url("../img/backgrounds/grass-08.png");
+  }
+
+  .grid-9 {
+    background-image: url("../img/backgrounds/grass-09.png");
+  }
+
+}
+
+/****** BUTTONS *****/
+.btn-play-game {
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-game-info {
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) and (min-height: 600px){
+
+  .game-area {
+    width: 450px;
+
+    .grid-item {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}

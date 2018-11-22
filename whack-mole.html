@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whack-a-Mole Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/game.css" type="text/css" rel="stylesheet">
+    <script src="js/game.js" defer></script>
+</head>
+<body>
+    <main class="mole-game">
+        <div class="game-area">
+            <header class="fence">
+                <div class="btn-game-info">
+                    Score
+                    <div id="score">0</div>
+                </div>
+                <div class="btn-game-info">
+                    Timer
+                    <div id="timer">10</div>
+                </div>
+            </header>
+            <div class="grid-row">
+                <div class="grid-item grid-1" data-mole="1">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/01.png"> </div>
+                </div>
+                <div class="grid-item grid-2" data-mole="2">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/02.png"> </div>
+                </div>
+                <div class="grid-item grid-3" data-mole="3">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/03.png"> </div>
+                </div>
+            </div>
+
+            <div class="grid-row">
+                <div class="grid-item grid-4" data-mole="4">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/04.png"> </div>
+                </div>
+                <div class="grid-item grid-5" data-mole="5">
+                    <div class="key"><img src="img/buttons/05.png"> </div>
+                    <div class="mole-img"></div>
+                </div>
+                <div class="grid-item grid-6" data-mole="6">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/06.png"> </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-item grid-7" data-mole="7">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/07.png"> </div>
+                </div>
+                <div class="grid-item grid-8" data-mole="8">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/08.png"> </div>
+                </div>
+                <div class="grid-item grid-9" data-mole="9">
+                    <div class="mole-img"></div>
+                    <div class="key"><img src="img/buttons/09.png"> </div>
+                </div>
+            </div>
+            <div class="start">
+                <div id="play-game" class="btn-play-game">Play</div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>
